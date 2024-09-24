@@ -169,7 +169,7 @@ body {
     }
 
     .profile-img {
-        width: 60vw;
+        width: 100%;
     }
 
     .portfolio iframe {
@@ -183,7 +183,7 @@ body {
 
 @media (max-width: 468px) {
     .profile-img {
-        width: 70vw;
+        /* width: 70vw; */
         margin: 10px;
     }
 
