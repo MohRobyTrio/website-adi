@@ -37,17 +37,6 @@ body {
     margin-left: 3.5rem;
 }
 
-.title {
-    font-size: 36px;
-    font-weight: bold;
-    word-break: break-word;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: gray;
-}
-
 .profile-section {
     background-color: white;
     padding: 40px;
@@ -155,81 +144,12 @@ body {
     height: 56px;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 56px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa-whatsapp {
-    background: #25D366;
-    color: white;
-}
-
-.fa-instagram {
-    background-image: linear-gradient(to bottom left, #e95950, #bc2a8d, #fccc63);
-    color: white;
-}
-
-.fa-dribbble {
-    background: #ea4c89;
-    color: white;
-}
-
-.fa-behance {
-    background: #053eff;
-    color: white;
-}
-
-.fa-pinterest {
-    background: red;
-    color: white;
-}
-
 .social-icons {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
 }
-
-.alinktree {
-    /* padding: 17px 20px 13px 20px; */
-    /* font-size: 30px; */
-    padding-top: 18px;
-    width: 56px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    background: #43e660;
-}
-
-.linktree {
-    height: 20px;
-    width: 18px;
-}
-
-/* .social-icons a img {
-    width: 30px;
-    height: 30px;
-} */
 
 @media (max-width: 1200px) {
     .container {
@@ -272,16 +192,10 @@ body {
 
 @media (max-width: 468px) {
     .profile-img {
-        /* width: 70vw; */
         margin: 10px;
     }
 
     .container-text {
         margin-top: 20px;
-    }
-
-    .fa {
-        height: 56px;
-        width: 56px;
     }
 }
