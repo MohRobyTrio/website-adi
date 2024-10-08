@@ -15,6 +15,7 @@
 body {
     padding: 40px;
     background-color: #f4f4f4;
+    color: #454545;
 }
 
 .horizontal-line {
@@ -96,7 +97,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
     text-align: justify; 
-    text-indent: 2em; 
     margin-bottom: 1em;
 }
 
@@ -123,6 +123,11 @@ body {
 
 .portfolio h3 {
     font-size: medium;
+    color: #fbc70e;
+}
+
+.kontak {
+    font-size: small;
 }
 
 .kontak h2 {
@@ -131,7 +136,7 @@ body {
 }
 
 .kontak .p {
-    font-size: 16px;
+    font-size: small;
     margin-bottom: 20px;
 }
 
@@ -144,10 +149,15 @@ body {
     height: 42px;
 }
 
+.long-media-linktree {
+    height: 42px;
+    margin-top: 20px;
+} 
+
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: start;
+    flex-wrap: nowrap;
     gap: 10px;
 }
 
@@ -186,8 +196,39 @@ body {
     }
 
     .social-icons {
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        justify-content: start;        
     }
+}
+
+@media (max-width: 520px) {
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; /* Jangan pindahkan ikon ke bawah */
+        overflow: hidden; /* Tambahkan jika diperlukan untuk memotong ikon jika terlalu besar */
+        gap: 10px;
+    }
+    
+    .social-icons a {
+        flex-grow: 1;
+        flex-shrink: 1; /* Biarkan ikon menyusut jika ruang tidak cukup */
+        min-width: 0; /* Izinkan penyusutan tanpa batas */
+        text-decoration: none;
+    }
+    
+    .social-icons img {
+        max-height: 50px; /* Ukuran awal ikon */
+        width: 100%; /* Ikon akan menyesuaikan lebar linknya */
+        height: auto;
+        transition: width 0.3s ease; /* Transisi untuk memperhalus penyusutan */
+    }
+
+    .long-media-linktree {
+        height: 30px;
+        margin-top: 20px;
+    } 
 }
 
 @media (max-width: 468px) {
@@ -198,4 +239,13 @@ body {
     .container-text {
         margin-top: 20px;
     }
+
+    /* .img-media {
+        width: 33px;
+        height: 33px;
+    }
+    
+    .long-media {
+        height: 33px;
+    } */
 }
