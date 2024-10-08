@@ -208,7 +208,7 @@ body {
         align-items: center;
         flex-wrap: nowrap; /* Jangan pindahkan ikon ke bawah */
         overflow: hidden; /* Tambahkan jika diperlukan untuk memotong ikon jika terlalu besar */
-        gap: 10px;
+        gap: 5px;
     }
     
     .social-icons a {
